@@ -11,11 +11,13 @@ angular.module 'Transorder'
             username:credentials.username
             password:credentials.password
           .success (response) ->
-            localStorageService.set('token', response.token)
+            localStorageService.set 'token', response.token
             success(response)
           .error error
-      logout: (success) ->
-        localStorageService.remove('token')
-        success()
+      logout: (callback) ->
+        localStorageService.remove 'token'
+        callback()
+      check: (callback) ->
+        callback(localStorageService.get 'token')
     return Authentication
 ]

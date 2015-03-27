@@ -2,11 +2,13 @@ angular.module 'Transorder'
 .controller 'NavigationController', [
   '$scope'
   '$state'
+  'App'
   'Navigation'
-  ($scope, $state, Navigation) ->
-    $scope.name = 'Transorder'
-    $scope.navigation = Navigation
+  ($scope, $state, App, Navigation) ->
+    $scope.name = App.name
+    $scope.navigation = []
 
-    console.log 'test'
+
+
     return
 ]

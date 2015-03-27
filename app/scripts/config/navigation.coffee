@@ -1,10 +1,14 @@
 angular.module 'Transorder'
 .value 'Navigation',
-  left: [
-    {name: 'Product', url: '#', child: {name: 'Buy', url: '#'}}
-    {name: 'About', url: '#'}
-  ]
-  right: [
-    {name: 'Login', url: '#/login'}
-    {name: 'Register', url: '#'}
-  ]
+  loggedin:
+    user: [
+      {name: 'Product', state: 'product'}
+      {name: 'Order', state: 'order'}
+      {name: 'Contact', state: 'contact'}
+    ]
+    admin: [
+      {name: 'Product Admin', 'admin.product'}
+      {name: 'User List', 'admin.user'}
+    ]
+
+

@@ -3,7 +3,6 @@ angular.module 'Transorder'
   '$scope'
   '$state'
   ($scope, $state) ->
-    $scope.name = 'Transorder'
-    console.log 'test'
+    $state.go 'app.navigation.guest'
     return
 ]
