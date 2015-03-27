@@ -1,13 +1,13 @@
 angular.module 'Transorder'
-.factory 'Authentication', [
+.factory 'AuthenticationService', [
   '$http'
   'localStorageService'
-  'ApiBaseUrl'
-  ($http, localStorageService, ApiBaseUrl) ->
+  'ApiValue'
+  ($http, localStorageService, ApiValue) ->
     Authentication =
       login: (credentials, success, error) ->
         $http
-          .post ApiBaseUrl + 'api/v1/authentication/login',
+          .post ApiValue + 'api/v1/authentication/login',
             username:credentials.username
             password:credentials.password
           .success (response) ->

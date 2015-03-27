@@ -2,10 +2,10 @@ angular.module 'Transorder'
 .controller 'NavigationController', [
   '$scope'
   '$state'
-  'App'
-  'Navigation'
-  ($scope, $state, App, Navigation) ->
-    $scope.name = App.name
+  'AppValue'
+  'NavigationValue'
+  ($scope, $state, AppValue, NavigationValue) ->
+    $scope.name = AppValue.name
     $scope.navigation = []
 
 

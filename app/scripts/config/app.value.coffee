@@ -1,3 +1,3 @@
 angular.module 'Transorder'
-.value 'App',
+.value 'AppValue',
   name: 'Transorder'

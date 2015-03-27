@@ -1,11 +1,10 @@
 angular.module 'Transorder'
-.controller 'LoginController', [
-  'Authentication'
-  'User'
+.controller 'AuthenticationLoginController', [
+  'AuthenticationService'
+  'UserService'
   'jwtHelper'
   '$scope'
-  (Authentication, jwtHelper, $scope) ->
-    console.log 'controller called'
+  (AuthenticationService, jwtHelper, $scope) ->
 #    Authentication.login {
 #      username: 'arlie36'
 #      password: 'standar'

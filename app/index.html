@@ -36,22 +36,49 @@
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+<!--module-->
 <script src="scripts/app.js"></script>
-<script src="scripts/config/app.js"></script>
+<!--module.end-->
+
+<!--config-->
 <script src="scripts/config/api.js"></script>
-<script src="scripts/config/navigation.js"></script>
+<script src="scripts/config/app.js"></script>
 <script src="scripts/config/interceptor.js"></script>
+<script src="scripts/config/navigation.js"></script>
 <script src="scripts/config/states.js"></script>
-<script src="scripts/services/product.js"></script>
-<script src="scripts/services/authentication.js"></script>
-<script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/content/content.js"></script>
+<!--config.end-->
+
+
+<!--controller-->
+
+<!--controller.authentication-->
 <script src="scripts/controllers/authentication/login.js"></script>
 <script src="scripts/controllers/authentication/register.js"></script>
+<!--controller.authentication.end-->
+
+<!--controller.content-->
+<script src="scripts/controllers/content/content.js"></script>
+<!--controller.content.end-->
+
+<!--controller.navigation-->
 <script src="scripts/controllers/navigation/navigation.js"></script>
-<script src="scripts/controllers/navigation/navigation-guest.js"></script>
-<script src="scripts/controllers/navigation/navigation-logged-in.js"></script>
-<script src="scripts/controllers/product/product-list.js"></script>
+<!--controller.navigation.end-->
+
+<!--controller.main-->
+<script src="scripts/controllers/main.js"></script>
+<!--controller.main.end-->
+
+<!--controller.end-->
+
+<!--service-->
+
+<script src="scripts/services/authentication.js"></script>
+<script src="scripts/services/product.js"></script>
+<script src="scripts/services/user.js"></script>
+
+<!--service.end-->
+
 <!-- endbuild -->
 </body>
 </html>

@@ -1,5 +1,5 @@
 angular.module 'Transorder'
-.value 'Navigation',
+.value 'NavigationValue',
   loggedin:
     user: [
       {name: 'Product', state: 'product'}
