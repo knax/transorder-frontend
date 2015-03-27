@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="Transorder">
+
+<div ui-view></div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-jwt/dist/angular-jwt.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/ui-router-extras/release/ct-ui-router-extras.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/config/api.js"></script>
+<script src="scripts/config/navigation.js"></script>
+<script src="scripts/config/interceptor.js"></script>
+<script src="scripts/config/states.js"></script>
+<script src="scripts/services/product.js"></script>
+<script src="scripts/services/authentication.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/content/content.js"></script>
+<script src="scripts/controllers/authentication/login.js"></script>
+<script src="scripts/controllers/authentication/register.js"></script>
+<script src="scripts/controllers/navigation/navigation.js"></script>
+<script src="scripts/controllers/navigation/navigation-guest.js"></script>
+<script src="scripts/controllers/navigation/navigation-logged-in.js"></script>
+<script src="scripts/controllers/product/product-list.js"></script>
+<script src="scripts/run.js"></script>
+<!-- endbuild -->
+</body>
+</html>

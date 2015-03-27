@@ -1,0 +1,17 @@
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<div ui-view="navigation"></div>
+
+<div class="container">
+    <div ui-view="content"></div>
+</div>
+
+<button class="btn btn-primary" ui-sref="app.navigation.guest">Navigation Guest</button>
+<button class="btn btn-primary" ui-sref="app.navigation.logged-in">Navigation Logged In</button>
+<button class="btn btn-primary" ui-sref="app.product">Product</button>
+<button class="btn btn-primary" ui-sref="app.order">order</button>
