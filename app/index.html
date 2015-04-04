@@ -14,81 +14,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
-<body ng-app="Transorder">
+<body>
 
 <div ui-view></div>
 
-<!-- build:js(.) scripts/vendor.js -->
-<!-- bower:js -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-<script src="bower_components/angular-resource/angular-resource.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/angular-jwt/dist/angular-jwt.js"></script>
-<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/ui-router-extras/release/ct-ui-router-extras.js"></script>
-<script src="bower_components/requirejs/require.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-
-<!--module-->
-<script src="scripts/app.js"></script>
-<!--module.end-->
-
-<!--config-->
-<script src="scripts/config/api.js"></script>
-<script src="scripts/config/app.js"></script>
-<script src="scripts/config/interceptor.js"></script>
-<script src="scripts/config/navigation.js"></script>
-<script src="scripts/config/states.js"></script>
-<!--config.end-->
-
-
-<!--controller-->
-
-<!--controller.authentication-->
-<script src="scripts/controllers/authentication/login.js"></script>
-<script src="scripts/controllers/authentication/register.js"></script>
-<!--controller.authentication.end-->
-
-<!--controller.navigation-->
-<script src="scripts/controllers/navigation.js"></script>
-<!--controller.navigation.end-->
-
-<!--controller.main-->
-<script src="scripts/controllers/main.js"></script>
-<!--controller.main.end-->
-
-<!--controller.product-->
-<script src="scripts/controllers/product/list.js"></script>
-<script src="scripts/controllers/product/detail.js"></script>
-<!--controller.product.end-->
-
-<!--controller.shipment-->
-<script src="scripts/controllers/shipment/select.js"></script>
-<!--controller.shipment.end-->
-
-<!--controller.shipment-->
-<script src="scripts/controllers/payment/form.js"></script>
-<!--controller.shipment.end-->
-
-<!--controller.end-->
-
-<!--service-->
-
-<script src="scripts/services/authentication.js"></script>
-<script src="scripts/services/product.js"></script>
-<script src="scripts/services/user.js"></script>
-
-<!--service.end-->
-
+<script src="bower_components/requirejs/require.js" data-main="scripts/bootstrap/start.js"></script>
 <!-- endbuild -->
 </body>
 </html>

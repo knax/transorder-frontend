@@ -13,9 +13,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse" id="navbar" ng-class="isCollapsed ? 'collapse' : 'in'">
             <ul class="nav navbar-nav">
-                <li ng-repeat="link in navigation.main" ui-sref-active="active">
+                <li ng-repeat="link in navigation.main" ui-sref-active="active" dropdown is-open="status.isopen">
                     <a ui-sref="{{link.state}}" ng-if="link.child == false">{{link.name}}</a>
-                    <a href class="dropdown-toggle" data-toggle="dropdown" role="button" ng-if="link.child != false">
+
+                    <a href class="dropdown-toggle" dropdown-toggle ng-disabled="disabled" ng-if="link.child != false">
                         {{link.name}} <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
