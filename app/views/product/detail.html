@@ -1,0 +1,50 @@
+<img class="img-rounded" ng-src="{{product.photoUrl}}" alt="product"/>
+
+<header>
+    <h1>{{product.name}}
+        <small>{{product.code}}</small>
+    </h1>
+</header>
+
+<section name="description" class="well well-sm">
+    <p>{{product.description}}</p>
+</section>
+
+<section name="stock">
+    <h2>Sisa Stok</h2>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Warna</th>
+            <th>Stok</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="color in product.color">
+            <td>{{color.name}}</td>
+            <td>{{color.quantity}}</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section name="order">
+    <h2>Pesan</h2>
+
+    <div class="well">
+        <form>
+            <div class="form-group">
+                <label for="color">Warna</label>
+                <select class="form-control" id="color">
+                    <option ng-repeat="color in product.color" value="{{color.id}}">{{color.name}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="stock">Kuantitas</label>
+                <input type="text" class="form-control" id="stock" placeholder="Kuantitas">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</section>

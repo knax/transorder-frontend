@@ -1,0 +1,47 @@
+<header>
+    <h2>Pilih pesanan yang akan dikirim</h2>
+</header>
+
+<section name="ordered-list">
+    <div class="list-group">
+        <a href class="list-group-item" ng-repeat="order in orders" ng-click="toggleActive($event)">
+            <div class="media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{order.photoUrl}}">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{order.name}}</h4>
+                    <strong>{{order.price}}</strong>
+
+                    <p>{{order.description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section name="shipment-detail">
+    <div class="well">
+        <form>
+            <div class="form-group">
+                <label for="name">Nama Penerima</label>
+                <input type="text" class="form-control" id="name" placeholder="Nama Penerima">
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat Penerima</label>
+                <textarea class="form-control" rows="3" id="address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="information">Keterangan</label>
+                <textarea class="form-control" rows="3" id="information"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="delivery-service">Jasa Pengiriman</label>
+                <select class="form-control" id="delivery-service">
+                    <option ng-repeat="deliveryService in deliveryServices" value="{{deliveryService.id}}">{{deliveryService.name}}</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</section>

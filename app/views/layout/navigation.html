@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">{{name}}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-collapse" id="navbar" ng-class="isCollapsed ? 'collapse' : 'in'">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="link in navigation.main" ui-sref-active="active">
+                    <a ui-sref="{{link.state}}" ng-if="link.child == false">{{link.name}}</a>
+                    <a href class="dropdown-toggle" data-toggle="dropdown" role="button" ng-if="link.child != false">
+                        {{link.name}} <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ng-repeat="childLink in link.child" ui-sref-active="active">
+                            <a ui-sref="{{childLink.state}}">{{childLink.name}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" ui-sref-active="active">
+                <li ng-repeat="link in navigation.right">
+                    <a ui-sref="{{link.state}}">{{link.name}}</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

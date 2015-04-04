@@ -1,5 +1,5 @@
 angular.module 'Transorder'
-.controller 'RegisterController', [
+.controller 'AuthenticationRegisterController', [
   '$scope'
   ($scope) ->
 ]

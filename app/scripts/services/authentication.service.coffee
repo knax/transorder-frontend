@@ -19,5 +19,4 @@ angular.module 'Transorder'
         callback()
       check: (callback) ->
         callback(localStorageService.get 'token')
-    return Authentication
 ]

@@ -1,0 +1,14 @@
+<div class="list-group">
+    <a ui-sref="app.content.product.detail({id: product.id})" class="list-group-item" ng-repeat="product in products">
+        <div class="media">
+            <div class="pull-left">
+                <img class="media-object" ng-src="{{product.photoUrl}}">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{product.name}}</h4>
+                <strong>{{product.price}}</strong>
+                <p>{{product.description}}</p>
+            </div>
+        </div>
+    </a>
+</div>

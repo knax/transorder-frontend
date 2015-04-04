@@ -26,6 +26,7 @@ module.exports = (config) ->
       'bower_components/angular-local-storage/dist/angular-local-storage.js'
       'bower_components/angular-ui-router/release/angular-ui-router.js'
       'bower_components/ui-router-extras/release/ct-ui-router-extras.js'
+      'bower_components/requirejs/require.js'
       'bower_components/angular-mocks/angular-mocks.js'
       # endbower
       # bower:coffee

@@ -3,5 +3,5 @@ angular.module 'Transorder'
   'baseUrl': 'localhost'
   'apiVersion': 'v1'
   'protocol': 'http'
-  'path': () ->
-    "#{this.protocol}://#{this.baseUrl}/#{this.apiVersion}"
+  'path': ->
+    "#{@protocol}://#{@baseUrl}/#{@apiVersion}"
